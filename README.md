@@ -1,13 +1,12 @@
 # Opensea NFT Viewer
-Input any address and view their NFT collection.
+Input any address and view their NFT collection via the OpenSea API.
 
 ## Technology Stack & Dependencies
 
-- Solidity (Writing Smart Contract)
-- Javascript (Game interaction)
+- React (Dapp interface)
+- Javascript (API interactions)
 - [NodeJS](https://nodejs.org/en/) To create hardhat project and install dependencis using npm
 
-
 ### 1. Clone/Download the Repository
-
+gh repo clone simon-masterclass/nft-viewer
 
