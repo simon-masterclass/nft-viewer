@@ -76,7 +76,7 @@ function App() {
           id='button-addon2'
           onClick={() => getNfts()}
           >
-            Get All NFTs of this Address
+            Get All NFTs at Address
           </button>
         )}
       </div>
