@@ -40,12 +40,9 @@ function App() {
   }
 
   return (
-
+      
     <div className='container'>
-      <span class="header"> <b>OpenSea NFT Viewer</b></span>
-        {'\n'}
-        
-    <div className='container'>
+      <span className="header"> <b>OpenSea NFT Viewer</b></span>
       <div className='input-group mt-5 mb-5'>
         <input
           type='text'
