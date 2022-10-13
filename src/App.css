@@ -13,19 +13,6 @@
   }
 }
 
-/* Header Title */
-.header {
-  padding: 17px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  background: #007aff;
-  margin: 20px;
-  font-size:33px;
-  color: white;
-  border-radius: 50%;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

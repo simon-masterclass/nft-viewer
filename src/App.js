@@ -1,22 +1,20 @@
 import { useState } from 'react';
 import './App.css';
-//import titleBar from './titleBar.js';
 
 function App() {
   const [nftOwner, setNftOwner] = useState('');
   const [allNfts, setAllNfts] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  
   const getNfts = async () => {
-    
+
     setLoading(true);
-    
+
     const options = { method: 'GET', headers: { Accept: 'application/json' } };
     fetch(
       `https://api.opensea.io/api/v1/assets?owner=${nftOwner}&limit=200&include_orders=false`,
       options
-      )
+    )
       .then((response) => response.json())
       .then((response) => {
         //Once we get a response we save it in state as an array
@@ -28,24 +26,21 @@ function App() {
         console.error(err);
         setLoading(false);
       });
-    };
-    
-    
-    function makeid(length) {
-      var result = '';
-      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-      var charactersLength = characters.length;
-      for (var i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      }
-      return result;
+  };
+
+
+  function makeid(length) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
-    
-    return (
-      
+    return result;
+  }
+
+  return (
     <div className='container'>
-      <span class="header"> <b>OpenSea NFT Viewer</b></span>
-        {'\n'}
       <div className='input-group mt-5 mb-5'>
         <input
           type='text'
