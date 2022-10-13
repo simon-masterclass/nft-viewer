@@ -1,5 +1,30 @@
 .App {
   text-align: center;
+  
+}
+
+a:link {
+  color: rgb(244, 240, 138);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffc0cb;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(192, 142, 142);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .App-logo {
@@ -24,6 +49,20 @@
   font-size:33px;
   color: white;
   border-radius: 50%;
+}
+
+/* Header Title */
+.example {
+  padding: 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #3b3b3b;
+  margin: 2px;
+  font-size:17px;
+  color: white;
+  border-radius: 0%;
+ 
 }
 
 .App-header {

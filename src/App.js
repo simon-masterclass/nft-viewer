@@ -43,6 +43,13 @@ function App() {
       
     <div className='container'>
       <span className="header"> <b>OpenSea NFT Viewer</b></span>
+      {nftOwner == '' ? (
+          <span className="example">Example Address: 0x3a8db289e94465181e54353571fa7880857c0d87</span>
+        ) : (
+          <span className="example">Suggestion: Check out these celebrity wallet addresses at... <a href="https://dappradar.com/blog/celebrity-wallets-a-dive-into-crypto-hollywood" target="_blank">DappRadar.com</a></span>
+        ) 
+      }
+      
       <div className='input-group mt-5 mb-5'>
         <input
           type='text'
@@ -64,10 +71,10 @@ function App() {
           </button>
         ) : (
           <button
-            className='btn btn-outline-primary'
-            type='button'
-            id='button-addon2'
-            onClick={() => getNfts()}
+          className='btn btn-outline-primary'
+          type='button'
+          id='button-addon2'
+          onClick={() => getNfts()}
           >
             Get All NFTs of this Address
           </button>
