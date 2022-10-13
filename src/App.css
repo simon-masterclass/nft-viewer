@@ -28,32 +28,6 @@
   color: #61dafb;
 }
 
-.collection-image{
-  width: 22px;
-  height:22px;
-  border-radius: 50%;
-  background-size: contain;
-}
-
-.model-circle-image{
-  width: 28px;
-  height:28px;
-  border-radius: 50%;
-  background-size: contain;
-}
-
-.image-box{
-  display: flex;
-}
-
-.nft-img{
-  max-width: 18rem;
-  max-height: 18rem;
-  position: relative;
-  object-fit: contain;
-}
-
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
