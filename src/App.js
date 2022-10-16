@@ -46,7 +46,7 @@ function App() {
       {nftOwner == '' ? (
           <span className="example">Example Address: 0x3a8db289e94465181e54353571fa7880857c0d87</span>
         ) : (
-          <span className="example">Suggestion: Check out these celebrity wallet addresses at... <a href="https://dappradar.com/blog/celebrity-wallets-a-dive-into-crypto-hollywood" target="_blank">DappRadar.com</a></span>
+          <div className="example">Suggestion: Check out these celebrity wallet addresses at... <a href="https://dappradar.com/blog/celebrity-wallets-a-dive-into-crypto-hollywood" target="_blank">DappRadar.com</a></div>
         ) 
       }
       
