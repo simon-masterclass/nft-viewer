@@ -1,5 +1,5 @@
 # Opensea NFT Viewer
-Input any address and view their NFT collection via the OpenSea API.
+Input any address and view their NFT collection via the OpenSea API. See the live demo app here: [https://opensea-nft-viewer.on.fleek.co/](https://opensea-nft-viewer.on.fleek.co/)
 
 ## Technology Stack & Dependencies
 
